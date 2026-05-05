@@ -69,10 +69,11 @@
 - [ ] Run through the test plan end-to-end
 - [ ] **COMMIT 9:** `Add sample data and final testing`
 
-### Stage 10: Documentation
-- [ ] Class diagram (`Docs/class-diagram.md`)
-- [ ] Final report (`Docs/final-report.md`)
-- [ ] Viva preparation files
+### Stage 10: Documentation ✅
+- [x] Class diagram (`Docs/class-diagram.md`)
+- [x] Final report (`Docs/final-report.md`)
+- [x] Viva pack — `Docs/viva/01-component-overview.md` ... `06-presenting-to-panel.md`
+- [x] Viva pack README index
 - [ ] **COMMIT 10:** `Add project documentation and viva prep`
 
 ---

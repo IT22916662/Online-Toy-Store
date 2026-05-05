@@ -139,3 +139,25 @@ Running log of work completed on the Online Toy Store - Toy Management component
 **Commit message:** `Add sample data and final testing`
 
 ---
+
+## Stage 10: Documentation and Viva Prep
+
+**Goal:** Produce every artefact the viva and the rubric ask for.
+
+**Actions:**
+- `Docs/class-diagram.md` — UML in Mermaid format, plain-text hierarchy, and a layered architecture diagram showing data flow from JSPs down to `toys.txt`.
+- `Docs/final-report.md` — overview, component description, OOP analysis, file handling write-up, project structure, build instructions, and the commit history table.
+- `Docs/viva/` — six-file preparation pack:
+  1. `01-component-overview.md` — the elevator pitch
+  2. `02-crud-operations.md` — flow walk-through of each CRUD operation
+  3. `03-oop-principles.md` — exactly which class and method to point at for each principle
+  4. `04-code-structure.md` — file-by-file tour in the order to walk the panel through
+  5. `05-questions-and-answers.md` — 34 likely viva questions with concise answers
+  6. `06-presenting-to-panel.md` — opening / demo / code walk script for the day
+- `Docs/viva/README.md` — index that lists which file to read when.
+
+**Component complete.**
+
+**Commit message:** `Add project documentation and viva prep`
+
+---
