@@ -1,0 +1,10 @@
+T001|ELECTRONIC|Remote Control Car|2500.00|10|6+|true
+T002|ELECTRONIC|Robot Dog|4500.00|6|8+|true
+T003|EDUCATIONAL|Math Puzzle Set|800.00|25|4+|Mathematics
+T004|EDUCATIONAL|Wooden Building Blocks|1200.00|18|3+|Creativity
+T005|EDUCATIONAL|Science Lab Kit|3200.00|7|10+|Science
+T006|SOFT|Teddy Bear|1500.00|15|0+|Cotton
+T007|SOFT|Plush Elephant|1800.00|9|0+|Polyester
+T008|ELECTRONIC|Drone Mini|6500.00|3|12+|true
+T009|EDUCATIONAL|Alphabet Puzzle|650.00|0|3+|Language
+T010|SOFT|Bunny Soft Toy|1100.00|22|0+|Cotton

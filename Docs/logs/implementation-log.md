@@ -127,3 +127,15 @@ Running log of work completed on the Online Toy Store - Toy Management component
 **Commit message:** `Add Bootstrap styling and improve UI`
 
 ---
+
+## Stage 9: Sample Data and Testing
+
+**Goal:** Provide demo-ready content and a documented test plan for the viva.
+
+**Actions:**
+- Seeded `WEB-INF/data/toys.txt` with 10 toys covering all three subclasses, including edge cases: a 0-stock entry (`T009`) to exercise the "Out of stock" badge and a stock=3 entry (`T008`) for the "low" badge.
+- Wrote `Docs/test-plan.md` — a numbered checklist that walks the evaluator (or me before the viva) through each of the 8 functional areas: startup, list, search, create, update, delete, file persistence, UI/navigation. Each row has a step and an expected outcome.
+
+**Commit message:** `Add sample data and final testing`
+
+---

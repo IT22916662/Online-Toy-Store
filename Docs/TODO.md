@@ -63,9 +63,10 @@
 - [x] Toy emoji prefix on navbar brand
 - [ ] **COMMIT 8:** `Add Bootstrap styling and improve UI`
 
-### Stage 9: Sample Data & Testing
-- [ ] Create sample `toys.txt` with seed entries
-- [ ] Test all CRUD flows end-to-end
+### Stage 9: Sample Data & Testing ✅
+- [x] Sample `toys.txt` with 10 seed toys (mix of all 3 categories)
+- [x] Manual `Docs/test-plan.md` covering all CRUD + edge cases
+- [ ] Run through the test plan end-to-end
 - [ ] **COMMIT 9:** `Add sample data and final testing`
 
 ### Stage 10: Documentation
