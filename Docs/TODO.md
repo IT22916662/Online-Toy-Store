@@ -10,18 +10,19 @@
 
 ## Stage Plan (with commit checkpoints)
 
-### Stage 1: Project Setup
+### Stage 1: Project Setup ✅
 - [x] Create Maven webapp directory structure
-- [ ] Add `pom.xml` with Servlet + JSP + JSTL dependencies
-- [ ] Add `web.xml` deployment descriptor
-- [ ] Create `index.jsp` landing page
-- [ ] **COMMIT 1:** `Initial Maven + JSP/Servlet project setup`
+- [x] Add `pom.xml` with Servlet + JSP + JSTL dependencies
+- [x] Add `web.xml` deployment descriptor
+- [x] Create `index.jsp` landing page
+- [x] **COMMIT 1:** `Initial Maven + JSP/Servlet project setup`
 
-### Stage 2: OOP Model Classes
-- [ ] Create abstract `Toy` class (encapsulation, abstract methods)
-- [ ] Create `ElectronicToy` subclass
-- [ ] Create `EducationalToy` subclass
-- [ ] Create `SoftToy` subclass
+### Stage 2: OOP Model Classes ✅
+- [x] Create abstract `Toy` class (encapsulation, abstract methods)
+- [x] Create `ElectronicToy` subclass
+- [x] Create `EducationalToy` subclass
+- [x] Create `SoftToy` subclass
+- [x] Create `ToyFactory` for type-safe construction and file parsing
 - [ ] **COMMIT 2:** `Add Toy model with inheritance and polymorphism`
 
 ### Stage 3: File Handling Utility
