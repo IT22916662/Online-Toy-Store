@@ -128,5 +128,7 @@
     updateExtraField();
 </script>
 
+<%@ include file="footer.jspf" %>
+
 </body>
 </html>

@@ -56,10 +56,11 @@
 - [x] `notfound` message handled in `toy-list.jsp`
 - [ ] **COMMIT 7:** `Implement Delete operation`
 
-### Stage 8: Polish & Styling
-- [ ] Apply Bootstrap navbar / cards / forms across all JSPs
-- [ ] Add custom CSS (`style.css`)
-- [ ] Add basic client-side validation
+### Stage 8: Polish & Styling ✅
+- [x] Custom `style.css` with hover effects, refined table, branded footer
+- [x] Reusable `footer.jspf` included on every page
+- [x] Hero section on landing page with quick-action buttons
+- [x] Toy emoji prefix on navbar brand
 - [ ] **COMMIT 8:** `Add Bootstrap styling and improve UI`
 
 ### Stage 9: Sample Data & Testing

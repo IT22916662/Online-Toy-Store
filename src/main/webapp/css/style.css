@@ -1,23 +1,97 @@
+/* ===== Online Toy Store — custom styles ===== */
+
 body {
-    background-color: #f8f9fa;
-    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(180deg, #f8f9fb 0%, #eef2f7 100%);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+main, .container {
+    flex: 1;
+}
+
+/* Brand bar */
 .navbar-brand {
-    font-weight: 600;
-    letter-spacing: 0.3px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
 }
 
+.navbar-brand::before {
+    content: "🧸 ";
+    margin-right: 4px;
+}
+
+/* Cards on the landing page */
 .card {
     border: none;
-    transition: transform 0.15s ease-in-out;
+    border-radius: 12px;
+    transition: transform 0.18s ease-in-out, box-shadow 0.18s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.10) !important;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: 600;
+}
+
+/* Tables */
+table.table {
+    margin-bottom: 0;
 }
 
 table.table thead th {
     background-color: #0d6efd;
     color: #fff;
+    font-weight: 500;
+    border: none;
+    white-space: nowrap;
+}
+
+table.table tbody tr:hover {
+    background-color: #f1f7ff;
+}
+
+/* Category badge tints */
+.badge.bg-secondary {
+    background-color: #6c757d !important;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+/* Form fields */
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.18);
+}
+
+/* Action buttons inside table rows */
+table .btn-sm {
+    padding: 0.2rem 0.55rem;
+}
+
+/* Alerts */
+.alert {
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer.app-footer {
+    background-color: #0b3d91;
+    color: #cfd8e3;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer.app-footer a {
+    color: #ffffff;
+    text-decoration: none;
 }

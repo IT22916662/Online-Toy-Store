@@ -16,9 +16,14 @@
 </nav>
 
 <div class="container py-5">
-    <div class="p-5 mb-4 bg-light rounded-3 text-center">
-        <h1 class="display-5 fw-bold">Toy Management System</h1>
-        <p class="lead">Manage the toy catalog: add, browse, edit, and remove toys.</p>
+    <div class="p-5 mb-4 bg-white rounded-3 text-center shadow-sm">
+        <h1 class="display-5 fw-bold text-primary">Toy Management System</h1>
+        <p class="lead text-muted">Add, browse, edit, and remove toys in your store catalog.</p>
+        <hr class="my-4">
+        <p class="mb-0">
+            <a href="${pageContext.request.contextPath}/toys" class="btn btn-primary btn-lg me-2">Browse Catalog</a>
+            <a href="${pageContext.request.contextPath}/add-toy" class="btn btn-success btn-lg">+ Add New Toy</a>
+        </p>
     </div>
 
     <div class="row g-4">
@@ -50,6 +55,8 @@
         </div>
     </div>
 </div>
+
+<%@ include file="WEB-INF/views/footer.jspf" %>
 
 </body>
 </html>

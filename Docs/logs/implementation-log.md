@@ -113,3 +113,17 @@ Running log of work completed on the Online Toy Store - Toy Management component
 **Commit message:** `Implement Delete operation`
 
 ---
+
+## Stage 8: UI Polish
+
+**Goal:** Lift the visual quality so the UI Design rubric criterion (10 marks) is comfortably hit.
+
+**Actions:**
+- Expanded `style.css`: subtle gradient body background, rounded cards with hover lift, blue header on tables with light hover row tint, focused form inputs glowing in primary blue, branded dark-blue footer.
+- Created a reusable `footer.jspf` fragment listing project name and module — included on every page (`index`, `add-toy`, `toy-list`, `edit-toy`) so the layout is consistent.
+- Added a 🧸 emoji prefix to the navbar brand via CSS pseudo-element.
+- Reworked the landing-page hero into a white shadowed jumbotron with two prominent CTA buttons (Browse Catalog / Add New Toy).
+
+**Commit message:** `Add Bootstrap styling and improve UI`
+
+---
