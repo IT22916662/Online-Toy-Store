@@ -50,9 +50,10 @@
 - [x] Validation + error echoing
 - [ ] **COMMIT 6:** `Implement Update operation (Edit toy details)`
 
-### Stage 7: DELETE Operation
-- [ ] `DeleteToyServlet` to remove toy
-- [ ] Confirmation flow on toy list
+### Stage 7: DELETE Operation ✅
+- [x] `DeleteToyServlet` removes toy and redirects with status
+- [x] JS confirmation already present on catalog (Stage 5)
+- [x] `notfound` message handled in `toy-list.jsp`
 - [ ] **COMMIT 7:** `Implement Delete operation`
 
 ### Stage 8: Polish & Styling

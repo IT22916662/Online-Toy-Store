@@ -99,3 +99,17 @@ Running log of work completed on the Online Toy Store - Toy Management component
 **Commit message:** `Implement Update operation (Edit toy details)`
 
 ---
+
+## Stage 7: Delete Operation
+
+**Goal:** Remove a toy from the catalog with confirmation.
+
+**Actions:**
+- `DeleteToyServlet.java` mapped to `/delete-toy`. Reads the `id` query parameter, calls `ToyDAO.delete`, and redirects to `/toys?msg=deleted` (or `?msg=notfound` if no row matched). Single GET handler keeps it simple — the catalog already guards the action with a JavaScript `confirm()` dialog before navigating.
+- Added a `notfound` alert branch in `toy-list.jsp` for the unlikely case where the ID does not match any record.
+
+**All four CRUD operations are now in place.**
+
+**Commit message:** `Implement Delete operation`
+
+---

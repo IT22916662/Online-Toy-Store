@@ -32,6 +32,9 @@
         <c:when test="${msg == 'deleted'}">
             <div class="alert alert-warning">Toy deleted.</div>
         </c:when>
+        <c:when test="${msg == 'notfound'}">
+            <div class="alert alert-danger">Toy not found. Nothing was deleted.</div>
+        </c:when>
     </c:choose>
 
     <div class="card mb-4 shadow-sm">
