@@ -25,9 +25,10 @@
 - [x] Create `ToyFactory` for type-safe construction and file parsing
 - [ ] **COMMIT 2:** `Add Toy model with inheritance and polymorphism`
 
-### Stage 3: File Handling Utility
-- [ ] Create `FileHandler` utility for read/write to `toys.txt`
-- [ ] Create `ToyDAO` (Data Access Object) for CRUD
+### Stage 3: File Handling Utility ✅
+- [x] Create `FileHandler` utility for read/write to `toys.txt`
+- [x] Create `ToyDAO` (Data Access Object) for CRUD
+- [x] Create `AppInitializer` listener to share DAO instance across servlets
 - [ ] **COMMIT 3:** `Add file handling utility and ToyDAO`
 
 ### Stage 4: CREATE Operation

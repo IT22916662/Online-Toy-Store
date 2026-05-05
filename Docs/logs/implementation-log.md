@@ -45,3 +45,18 @@ Running log of work completed on the Online Toy Store - Toy Management component
 **Commit message:** `Add Toy model with inheritance and polymorphism`
 
 ---
+
+## Stage 3: File Handling and DAO
+
+**Goal:** Provide a clean storage layer so servlets never touch raw file I/O.
+
+**Actions:**
+- `FileHandler.java` — utility around `BufferedReader` / `BufferedWriter`. Three operations: `readAllLines`, `appendLine`, `writeAllLines`. Auto-creates the file (and parent folder) on first use. The static `forContext` helper resolves a path inside `WEB-INF/data` of the deployed app, so the data file lives next to the WAR rather than in the project source tree.
+- `ToyDAO.java` — Data Access Object that consumes a `FileHandler` and exposes domain-level CRUD: `add`, `findAll`, `findById`, `search` (by name fragment + category), `update`, `delete`. Also provides `nextId()` which scans existing IDs and returns the next `Txxx` value so the UI can suggest one. Uses `ToyFactory` from Stage 2 to translate file lines back into the correct subclass.
+- `AppInitializer.java` — `ServletContextListener` annotated with `@WebListener`. Runs once when the webapp starts, builds a single `ToyDAO`, and stores it in `ServletContext` under `DAO_KEY`. Servlets (Stages 4–7) will read from there instead of constructing their own.
+
+**Why this layout:** the servlets, the DAO, and the file utility each have one job. Adding MySQL later would only require swapping `FileHandler` for a JDBC-backed implementation behind the same DAO.
+
+**Commit message:** `Add file handling utility and ToyDAO`
+
+---
