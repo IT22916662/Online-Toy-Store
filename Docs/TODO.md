@@ -38,10 +38,10 @@
 - [x] Update index links to use context path
 - [ ] **COMMIT 4:** `Implement Create operation (Add new toy)`
 
-### Stage 5: READ Operation
-- [ ] `ListToysServlet` to fetch all toys
-- [ ] `SearchToyServlet` to search by name/category
-- [ ] `toy-list.jsp` display page
+### Stage 5: READ Operation ✅
+- [x] `ListToysServlet` handles both list and search via query params
+- [x] `toy-list.jsp` display page with search bar, table, and stock badges
+- [x] Edit and Delete action buttons (route to upcoming servlets)
 - [ ] **COMMIT 5:** `Implement Read operation (List and search toys)`
 
 ### Stage 6: UPDATE Operation

@@ -72,4 +72,18 @@ Running log of work completed on the Online Toy Store - Toy Management component
 
 **Commit message:** `Implement Create operation (Add new toy)`
 
+**Note:** This commit also bumps Servlet API to 6.0, JSP API to 3.1, and JSTL to 3.0 — required for Tomcat 10.1.x. The earlier 2.0/5.0 versions threw `Unable to get JAR resource [/WEB-INF/views/jakarta.tags.core]` because JSTL 2.0's TLDs are not registered under Jakarta EE 10.
+
+---
+
+## Stage 5: Read Operation
+
+**Goal:** Show every toy in a Bootstrap table and let the user filter by name and/or category.
+
+**Actions:**
+- `ListToysServlet.java` mapped to `/toys`. Reads optional `name` and `category` query parameters and delegates filtering to `ToyDAO.search`. Stores the filtered list, the original query values (so the form remembers them) and any `msg` parameter (`added` / `updated` / `deleted`) in request scope.
+- `toy-list.jsp` placed under `WEB-INF/views/`. Renders a search card, a status alert for the `msg` parameter, and a Bootstrap-styled table that includes the discounted price (proves polymorphism — the discount comes from each subclass's overridden `calculateDiscount`). Stock cells show coloured badges: red for 0, yellow for less than 5, plain number otherwise. Each row carries Edit and Delete action buttons (the Delete uses a JavaScript confirm).
+
+**Commit message:** `Implement Read operation (List and search toys)`
+
 ---
