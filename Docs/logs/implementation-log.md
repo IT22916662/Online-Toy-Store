@@ -87,3 +87,15 @@ Running log of work completed on the Online Toy Store - Toy Management component
 **Commit message:** `Implement Read operation (List and search toys)`
 
 ---
+
+## Stage 6: Update Operation
+
+**Goal:** Allow modifying existing toys.
+
+**Actions:**
+- `EditToyServlet.java` mapped to `/edit-toy`. `doGet` looks up the toy by `id` query parameter via `ToyDAO.findById`; if missing, redirects back to the list. Otherwise it forwards to the JSP with the existing `Toy` in request scope. `doPost` rebuilds the toy object via `ToyFactory.create` (so the same validation path as Add is used), calls `ToyDAO.update`, and redirects with `?msg=updated`.
+- `edit-toy.jsp` placed under `WEB-INF/views/`. The toy ID and category are shown as disabled inputs and posted back via hidden fields — they cannot change. The other fields are pre-populated from the existing toy, but if a validation error occurred, the user's last typed values are kept instead. The "extra" field's label switches based on the category (Battery / Skill / Material) just like the Add form.
+
+**Commit message:** `Implement Update operation (Edit toy details)`
+
+---

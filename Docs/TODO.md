@@ -44,10 +44,10 @@
 - [x] Edit and Delete action buttons (route to upcoming servlets)
 - [ ] **COMMIT 5:** `Implement Read operation (List and search toys)`
 
-### Stage 6: UPDATE Operation
-- [ ] `EditToyServlet` for edit form
-- [ ] `UpdateToyServlet` to apply changes
-- [ ] `edit-toy.jsp` form
+### Stage 6: UPDATE Operation ✅
+- [x] `EditToyServlet` (single servlet handles both GET show form and POST save)
+- [x] `edit-toy.jsp` form, pre-populated, ID + category locked
+- [x] Validation + error echoing
 - [ ] **COMMIT 6:** `Implement Update operation (Edit toy details)`
 
 ### Stage 7: DELETE Operation
