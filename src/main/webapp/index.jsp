@@ -27,7 +27,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Add New Toy</h5>
                     <p class="card-text">Add a new toy to the catalog.</p>
-                    <a href="add-toy" class="btn btn-success">Add Toy</a>
+                    <a href="${pageContext.request.contextPath}/add-toy" class="btn btn-success">Add Toy</a>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Browse Toys</h5>
                     <p class="card-text">View, search, edit, and delete existing toys.</p>
-                    <a href="toys" class="btn btn-primary">View Toys</a>
+                    <a href="${pageContext.request.contextPath}/toys" class="btn btn-primary">View Toys</a>
                 </div>
             </div>
         </div>

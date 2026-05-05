@@ -31,9 +31,11 @@
 - [x] Create `AppInitializer` listener to share DAO instance across servlets
 - [ ] **COMMIT 3:** `Add file handling utility and ToyDAO`
 
-### Stage 4: CREATE Operation
-- [ ] `AddToyServlet` to handle POST
-- [ ] `add-toy.jsp` form
+### Stage 4: CREATE Operation ✅
+- [x] `AddToyServlet` to handle GET (show form) and POST (save)
+- [x] `add-toy.jsp` form with category-aware extra field
+- [x] Server-side validation + error echoing
+- [x] Update index links to use context path
 - [ ] **COMMIT 4:** `Implement Create operation (Add new toy)`
 
 ### Stage 5: READ Operation

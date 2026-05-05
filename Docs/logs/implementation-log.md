@@ -60,3 +60,16 @@ Running log of work completed on the Online Toy Store - Toy Management component
 **Commit message:** `Add file handling utility and ToyDAO`
 
 ---
+
+## Stage 4: Create Operation
+
+**Goal:** Add a new toy to the catalog through a Bootstrap form, validated server-side.
+
+**Actions:**
+- `AddToyServlet.java` mapped to `/add-toy` via `@WebServlet`. `doGet` shows the form (with a suggested next ID from `ToyDAO.nextId()`); `doPost` reads the form parameters, builds the right subclass through `ToyFactory.create`, and calls `ToyDAO.add`. On success it redirects to `/toys?msg=added` (Post/Redirect/Get pattern, prevents double submission). On any validation problem it forwards back to the form with an error banner and the user's previously typed values preserved.
+- `add-toy.jsp` placed under `WEB-INF/views/` so it cannot be accessed directly without the servlet. Bootstrap-styled card layout with a category dropdown (Electronic / Educational / Soft). The "extra" input field's label and hint text change automatically via JavaScript depending on the chosen category — battery flag, skill type, or material.
+- Updated `index.jsp` buttons to use `${pageContext.request.contextPath}` so links work regardless of the deployment context name.
+
+**Commit message:** `Implement Create operation (Add new toy)`
+
+---
