@@ -4,15 +4,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add Toy - Online Toy Store</title>
+    <title>Add Toy - Hely</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark app-navbar">
     <div class="container">
-        <a class="navbar-brand" href="${pageContext.request.contextPath}/">Online Toy Store</a>
+        <a class="navbar-brand" href="${pageContext.request.contextPath}/">Hely</a>
         <div class="ms-auto">
             <a href="${pageContext.request.contextPath}/toys" class="btn btn-outline-light btn-sm">Browse Toys</a>
         </div>
@@ -23,7 +23,8 @@
     <div class="row justify-content-center">
         <div class="col-lg-8">
             <div class="card shadow-sm">
-                <div class="card-header bg-success text-white">
+                <img src="${pageContext.request.contextPath}/img/h.jpeg" class="form-banner" alt="Toy shop window display">
+                <div class="card-header bg-primary text-white">
                     <h4 class="mb-0">Add New Toy</h4>
                 </div>
                 <div class="card-body">
@@ -84,7 +85,7 @@
                         </div>
 
                         <div class="d-flex gap-2">
-                            <button type="submit" class="btn btn-success">Save Toy</button>
+                            <button type="submit" class="btn btn-primary">Save Toy</button>
                             <a href="${pageContext.request.contextPath}/toys" class="btn btn-secondary">Cancel</a>
                         </div>
                     </form>

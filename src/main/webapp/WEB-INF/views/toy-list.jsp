@@ -5,22 +5,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Toy Catalog - Online Toy Store</title>
+    <title>Toy Catalog - Hely</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark app-navbar">
     <div class="container">
-        <a class="navbar-brand" href="${pageContext.request.contextPath}/">Online Toy Store</a>
+        <a class="navbar-brand" href="${pageContext.request.contextPath}/">Hely</a>
         <div class="ms-auto">
-            <a href="${pageContext.request.contextPath}/add-toy" class="btn btn-success btn-sm">+ Add Toy</a>
+            <a href="${pageContext.request.contextPath}/add-toy" class="btn btn-light btn-sm text-primary fw-semibold">+ Add Toy</a>
         </div>
     </div>
 </nav>
 
 <div class="container py-4">
+    <div class="catalog-header mb-4">
+        <div>
+            <span class="section-kicker">Hely inventory</span>
+            <h1>Toy Catalog</h1>
+            <p>Search, update, and maintain products for the online toy store.</p>
+        </div>
+        <img src="${pageContext.request.contextPath}/img/a.jpeg" alt="Toy store aisle">
+    </div>
 
     <c:choose>
         <c:when test="${msg == 'added'}">
@@ -94,7 +102,7 @@
                                         <td><span class="badge bg-secondary">${t.category}</span></td>
                                         <td>${t.ageGroup}</td>
                                         <td><fmt:formatNumber value="${t.price}" type="number" minFractionDigits="2"/></td>
-                                        <td class="text-success">
+                                        <td class="text-primary fw-semibold">
                                             <fmt:formatNumber value="${t.discountedPrice}" type="number" minFractionDigits="2"/>
                                         </td>
                                         <td>

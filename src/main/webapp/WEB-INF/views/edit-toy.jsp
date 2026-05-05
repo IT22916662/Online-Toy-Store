@@ -4,15 +4,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Edit Toy - Online Toy Store</title>
+    <title>Edit Toy - Hely</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark app-navbar">
     <div class="container">
-        <a class="navbar-brand" href="${pageContext.request.contextPath}/">Online Toy Store</a>
+        <a class="navbar-brand" href="${pageContext.request.contextPath}/">Hely</a>
         <div class="ms-auto">
             <a href="${pageContext.request.contextPath}/toys" class="btn btn-outline-light btn-sm">Back to Catalog</a>
         </div>
@@ -23,6 +23,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-8">
             <div class="card shadow-sm">
+                <img src="${pageContext.request.contextPath}/img/ss.jpeg" class="form-banner" alt="Toy store display">
                 <div class="card-header bg-primary text-white">
                     <h4 class="mb-0">Edit Toy &mdash; ${toy.id}</h4>
                 </div>
