@@ -294,9 +294,10 @@ table .btn-sm {
 footer.app-footer {
     background-color: var(--hely-blue-950);
     color: #dbeafe;
-    font-size: 0.9rem;
+    font-size: 1.15rem;
+    font-weight: 500;
     margin-top: 3rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 footer.app-footer a {
