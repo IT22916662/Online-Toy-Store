@@ -23,7 +23,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-8">
             <div class="card shadow-sm">
-                <img src="${pageContext.request.contextPath}/img/h.jpeg" class="form-banner" alt="Toy shop window display">
+                <img src="${pageContext.request.contextPath}/img/hh.jpeg" class="form-banner" alt="Toy shop window display">
                 <div class="card-header bg-primary text-white">
                     <h4 class="mb-0">Add New Toy</h4>
                 </div>
